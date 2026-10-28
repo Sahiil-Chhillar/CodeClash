@@ -1,7 +1,5 @@
 <div align="center">
 
-<img src="frontend/public/hero1.png" alt="CodeClash banner" width="320" style="border-radius:16px" />
-
 # ⚔️ CodeClash
 
 ### One Problem. Two Minds. Winner Takes All.
