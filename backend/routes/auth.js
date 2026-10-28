@@ -11,6 +11,16 @@ const router = express.Router();
 router.post('/register', upload.single('profilePic'), async (req, res) => {
     try {
         const { username, cfUsername, email, password } = req.body;
+        
+        const cfRes = await fetch(
+          `https://codeforces.com/api/user.info?handles=${encodeURIComponent(cfUsername)}`,
+        );
+
+        const cfData = await cfRes.json();
+        if (cfData.status !== "OK") {
+          return res.status(400).json({ error: "Codeforces handle not found" });
+        }
+
         const hashedPassword = await bcrypt.hash(password, 10);
 
         const newUser = new User({
@@ -69,4 +79,3 @@ router.get('/profile', verifyToken, async (req, res) => {
 });
 
 export default router;
-
