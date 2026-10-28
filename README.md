@@ -10,7 +10,7 @@
 
 <br/>
 
-[![Live Demo](https://img.shields.io/badge/🚀_Live_Demo-CodeClash-facc15?style=for-the-badge&labelColor=111827)](https://codeclash.vercel.app)
+[![Live Demo](https://img.shields.io/badge/🚀_Live_Demo-CodeClash-facc15?style=for-the-badge&labelColor=111827)](https://code-clash-delta.vercel.app/)
 
 ![React](https://img.shields.io/badge/React_19-20232A?style=flat-square&logo=react&logoColor=61DAFB)
 ![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white)
