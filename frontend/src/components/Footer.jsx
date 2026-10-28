@@ -4,7 +4,7 @@ export default function Footer() {
             <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
                 {/* Left: Logo & Tagline */}
                 <div className="text-center md:text-left">
-                    <h3 className="text-3xl font-bold">Code<span className="text-primary">Bet</span></h3>
+                    <h3 className="text-3xl font-bold">Code<span className="text-primary">Clash</span></h3>
                     <p className="text-lg font-medium mt-1">
                         <span className="text-tertiary">Code</span>. <span className="text-primary">Compile</span>. <span className="text-secondary">Conquer</span>.
                     </p>

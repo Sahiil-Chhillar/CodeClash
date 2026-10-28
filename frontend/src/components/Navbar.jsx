@@ -15,7 +15,7 @@ export default function Navbar() {
                 {/* Left: Logo */}
                 <Link to={"/"}>
                     <div className="text-3xl font-bold tracking-wide">
-                        Code<span className="text-primary">Bet</span>
+                        Code<span className="text-primary">Clash</span>
                     </div>
                 </Link>
 
