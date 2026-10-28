@@ -23,7 +23,8 @@ const App = () => {
   const [socket, setSocket] = useState(null);
 
   useEffect(() => {
-    const newSocket = io("https://codebet-backend.onrender.com");
+    // const newSocket = io("https://codeclash-backend.onrender.com");
+    const newSocket = io(import.meta.env.VITE_API_URL);
     setSocket(newSocket);
     return () => newSocket.disconnect();
   }, []);

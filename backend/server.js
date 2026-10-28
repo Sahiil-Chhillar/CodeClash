@@ -15,11 +15,14 @@ const app = express();
 const server = http.createServer(app);
 
 // ✅ CORS Setup (allow frontend domain)
-app.use(cors({
-  origin: 'https://codeclash.vercel.app', // <-- allow only your frontend
-  methods: ['GET', 'POST', 'PUT', 'DELETE'],
-  allowedHeaders: ['Content-Type', 'Authorization'],
-}));
+app.use(
+  cors({
+    origin: process.env.CLIENT_URL || "http://localhost:5173",
+    // origin: 'https://codeclash.vercel.app', <-- allow only your frontend
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    allowedHeaders: ["Content-Type", "Authorization"],
+  }),
+);
 
 app.use(express.json());
 
