@@ -24,7 +24,7 @@ router.post('/register', upload.single('profilePic'), async (req, res) => {
         await newUser.save();
         return res.status(201).json({ message: 'User registered successfully' });
     } catch (err) {
-        res.status(500).json({ error: 'Registration failed' });
+        res.status(500).json({ error: 'Registration failed', details: err.message });
     }
 });
 
